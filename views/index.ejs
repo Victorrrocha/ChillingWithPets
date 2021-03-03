@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilling with pets</title>
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="menu">
+            <h3 id="title">Relaxing with animals</h3>
+
+            <div>
+                <p class="subTitles">Select animal</p>
+                <div class="selection">
+                    <div>
+                        <input type="radio" id="dogs" name="animal" value="dogs" checked>
+                        <label class="buttons" for="dogs">Dogs</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="cats" name="animal" value="cats">
+                        <label class="buttons" for="cats">Cats</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="foxes" name="animal" value="fox">
+                        <label class="buttons" for="foxes">Foxes</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="subTitles">Select time</p>
+                <div class="selection">
+                    <div>
+                        <input type="radio" id="1min" name="time" value="1min" checked>
+                        <label class="buttons" for="1min">1 min</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="3min" name="time" value="3min">
+                        <label class="buttons" for="3min">3 min</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="5min" name="time" value="5min">
+                        <label class="buttons" for="5min">5 min</label>
+                    </div>
+                </div>
+            </div>
+            <div class="start">
+                <button type="submit" onclick="startCronometer()" class="btn" id="start" name="start">Start</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
